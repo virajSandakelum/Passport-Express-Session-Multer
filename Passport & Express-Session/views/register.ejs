@@ -1,0 +1,39 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<style>
+    body{
+        max-width: 500px;
+        margin: auto;
+        margin-top: 100px;
+    }
+
+    div{
+        margin-top: 20px;
+    }
+
+    button
+    {
+        margin-top: 20px;
+    }
+</style>
+
+
+<form action="/register" method="post">
+    
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control" id="Name" name="Name" aria-describedby="emailHelp" placeholder="Enter Name">
+    </div>
+    <div class="form-group">
+        <label for="Email">Email address</label>
+        <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" class="form-control" id="Password" name="Password" placeholder="Password">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+<a href="/login">Login</a>
